@@ -1,49 +1,165 @@
-// User
-GET http://localhost:5000/posts
+### mengambil data
+GET http://localhost:5000/anggota
 
-
-###
-POST http://localhost:5000/posts
+### membuat data
+POST http://localhost:5000/anggota
 Content-Type: application/json
 
 {
-  "title": "alan walker",
-  "postText": "alan@gmail.com",
-  "username": "asdasd"
+  "stb": "24ssd2sd3",
+  "nama": "alan walker",
+  "jK": "asdasd",
+  "telp": "00090",
+  "alamat": "alan@gmail.com"
 }
 
-###
-PATCH http://localhost:5000/users/1
+### seleksi
+GET http://localhost:5000/anggota/243sd2sd3
+
+
+### mengubah data
+PUT http://localhost:5000/anggota/24ssd2sd3
 Content-Type: application/json
 
 {
-  "name": "mmmmmm Doe",
-  "email": "mmmm@gmail.com",
-  "gender": "male"
+  "nama": "alan walkerdsdsdsddddddddd",
+  "jK": "asdasd",
+  "telp": "00090",
+  "alamat": "alan@gmail.com"
 }
 
-###
-DELETE http://localhost:5000/users/2
+### delete
+DELETE http://localhost:5000/anggota/24323
 
-// Book
-###
-GET http://localhost:5000/books
-###
 
-POST http://localhost:5000/books
+
+
+
+
+### -------------------------------------------------------------------peminjam
+### mengambil data
+GET http://localhost:5000/peminjam
+
+### membuat data
+POST http://localhost:5000/peminjam
 Content-Type: application/json
 
 {
-  "book": "aaaaa",
-  "age": "2018",
-  "stock": "1"
+  "id_peminjamans": "ssf",
+  "tgl_pinjam": "2023-01-01 00:00:00",
+  "tgl_kembali": "2023-03-01 00:00:00",
+  "AnggotaStb": "243sds23"
 }
 
-###
-POST http://localhost:5000/comments
+### seleksi
+GET http://localhost:5000/peminjam/aaa
+
+
+### mengubah data
+PUT http://localhost:5000/peminjam/P1672674824069
 Content-Type: application/json
 
 {
-  "commentBody": "hi",
-  "PostId": 1
+  "id_peminjamans": "P1672674824069",
+  "tgl_pinjam": "2000-01-01 ",
+  "tgl_kembali": "2022-03-01 ",
+  "AnggotaStb": "243sds23"
 }
+
+### delete
+DELETE http://localhost:5000/anggota/1111
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### ---------------------------------------------------------------peminjamDetail
+### mengambil data
+GET http://localhost:5000/peminjamDetail
+
+### membuat data
+POST http://localhost:5000/peminjamDetail
+Content-Type: application/json
+
+{
+  "id_peminjamans": "erte",
+  "createdAt": "2023-01-01T00:00:00.000Z",
+  "updatedAt": "2023-01-01T00:00:00.000Z",
+  "BukuIdBuku": "B1672596906103",
+  "PeminjamIdPeminjamans": "P1672674824069"
+}
+
+### seleksi
+GET http://localhost:5000/peminjamDetail/11111
+
+
+### mengubah data
+PUT http://localhost:5000/peminjamDetail/11111
+Content-Type: application/json
+
+{
+  "id_peminjamans": "asdasd",
+  "createdAt": "2023-01-01T00:00:00.000Z",
+  "updatedAt": "2023-01-01T00:00:00.000Z",
+  "BukuIdBuku": "sds",
+  "PeminjamIdPeminjamans": "1111"
+}
+
+
+### delete
+DELETE http://localhost:5000/peminjamDetail/asdasd
+
+
+
+
+
+
+### ------------------------------------------------------------------Buku
+### mengambil data
+GET http://localhost:5000/buku
+
+### membuat data
+POST http://localhost:5000/buku
+Content-Type: application/json
+
+{
+  "id_buku": "77878",
+  "judulBuku": "87",
+  "penulis": "009",
+  "kategori": "009",
+  "penerbit": "009",
+  "JmlHal": 9,
+  "tahunPenerbit": 9
+}
+
+### seleksi
+GET http://localhost:5000/buku/11111111111
+
+
+### mengubah data
+PUT http://localhost:5000/buku/11111111111
+Content-Type: application/json
+
+{
+  "id_buku": "22222222222",
+  "judulBuku": "87",
+  "penulis": "009",
+  "kategori": "009",
+  "penerbit": "009",
+  "JmlHal": 9,
+  "tahunPenerbit": 9
+}
+
+
+### delete
+DELETE http://localhost:5000/buku/22222222222

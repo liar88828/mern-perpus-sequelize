@@ -9,6 +9,7 @@ export const CreatePost = () => {
 
 
   const navigate = useNavigate()
+
   const initialValues = {
     title: '',
     postText: '',
@@ -22,7 +23,6 @@ export const CreatePost = () => {
   });
 
   const onSubmit = (data) => {
-
     axios.post('http://localhost:5000/posts', data)
       .then(res => {
         console.log('success' + data);

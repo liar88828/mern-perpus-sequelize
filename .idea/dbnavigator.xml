@@ -13,15 +13,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="bab4fd64-a72f-47af-bb94-3342fd11b1df">
-      <console name="Connection" type="STANDARD" schema="crud_db" session="Main"><![CDATA[use crud_db;
-
-select * from pinjams;
-select * from books;
-select * from users;
-
---insert into books 
---value (4,ikan
---);]]></console>
+      <console name="Connection" type="STANDARD" schema="tutorial_db" session="Main"><![CDATA[select * from]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -259,6 +251,7 @@ select * from users;
           <content-type name="JavaScript" enabled="true" />
           <content-type name="JSON" enabled="true" />
           <content-type name="JSON5" enabled="true" />
+          <content-type name="PHP" enabled="true" />
           <content-type name="YAML" enabled="true" />
         </content-types>
       </qualified-text-editor>
